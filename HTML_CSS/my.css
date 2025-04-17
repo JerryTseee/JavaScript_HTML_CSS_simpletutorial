@@ -1,0 +1,47 @@
+/* this file contains css code */
+strong{
+    color: red;
+}
+
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
+
+#green{
+    color: green;
+}
+
+/* *{
+    color: purple;
+} */
+
+.purple{
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+}
+.orange{
+    width: 50px;
+    height: 100px;
+    background-color: orange;
+}
+
+p{
+    font-size: 50px;
+    text-indent: 2em;
+    font-style: italic;
+}
+
+text{
+    height: 100px;
+    background-color: skyblue;
+    line-height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.jerry{
+    font: italic 700 30px/2;
+    color: saddlebrown;
+}

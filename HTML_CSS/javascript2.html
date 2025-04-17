@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = 1 + 2
+        console.log(num)
+        num++
+        console.log(num)
+
+        console.log(2 == "2")
+        console.log(2 === "2") // check value and type same or not
+        console.log(2 == 3)
+        console.log(true || false)
+        console.log(true && false)
+        console.log(!true)
+
+        let year = prompt("enter your birth year")
+        if(year >= 2000){
+            console.log("jerry is handsome")
+        }
+        else if(year >= 1990){
+            console.log("jerry is ugly")
+        }
+        else{
+            console.log("jerry is very ugly")
+        }
+
+        console.log(3 > 2 ? "yes" : "no")
+
+        switch(1){
+            case 1:
+                console.log("male")
+                break
+            case 2:
+                console.log("female")
+                break
+            default:
+                console.log("i dont know your gender")
+                break
+        }
+
+        let isTrue = true
+        let count = 0
+        while(isTrue){
+            console.log("hello world")
+            if (count == 5){
+                isTrue = false
+            }
+            count++
+        }
+
+        let arr = ["jerry", "josh", "james"]
+        arr.push("cindy") // add at the end
+        arr.unshift("curry") // add at the beginning
+        for(let i = 0; i < arr.length; i++){
+            console.log(arr[i])
+        }
+        arr.pop() // remove at the end
+        arr.shift() // remove at the beginning
+        console.log(arr)
+        arr.splice(1, 2) // remove at index 1, delete 2 elements
+        console.log(arr)
+
+
+        // how to define function
+        function add(a, b){
+            let temp = a + b
+            return temp
+        }
+        console.log(add(1, 2))
+
+        let fn = function(){
+            console.log("this is function 2")
+        }
+        fn()
+
+
+        // object-oriented programming
+        let student = {
+            name: "jerry",
+            age: 20,
+            sayHi: function(){
+                console.log("hi! i am " + this.name)
+            }
+        }
+        console.log(student)
+        console.log(student.name)
+        student.gender = "male"
+        console.log(student)
+        delete student.age
+        console.log(student)
+        student.sayHi()
+
+        for(let key in student){
+            console.log(key)
+        }
+
+        // random number
+        console.log(Math.floor(Math.random() * 10)) // 0-9
+        console.log(Math.floor(Math.random() * (10+1)))
+
+    </script>
+</body>
+</html>
